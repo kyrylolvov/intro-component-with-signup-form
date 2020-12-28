@@ -1,0 +1,116 @@
+$font: "Poppins", sans-serif;
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$darkBlue: hsl(249, 10%, 26%);
+$grayishBlue: hsl(246, 25%, 77%);
+
+body {
+  font-family: $font;
+  color: white;
+  font-size: 16px;
+  background: url(images/bg-intro-desktop.png), $red;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 97vh;
+}
+main {
+  display: flex;
+  margin-left: -70px;
+}
+.textSection {
+  width: 532px;
+}
+.headerText {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+}
+.actionButton {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: $blue;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+  width: 534px;
+  margin-bottom: 24px;
+  transition: all 1s;
+}
+.actionButton:hover {
+  filter: brightness(115%);
+}
+.formWrapper {
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #dedede;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.formInput {
+  height: 56px;
+  width: 92%;
+  border-radius: 6px;
+  border: 1px solid #dedede;
+  color: $darkBlue;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  outline: none;
+  padding-left: 32px;
+  margin: 8px 0;
+}
+.claimButton {
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  background-color: $green;
+  border-radius: 6px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px;
+  text-align: center;
+  border: 1px solid $green;
+  color: white;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+  transition: all 1s;
+  margin-top: 8px;
+}
+.claimButton:hover {
+  filter: brightness(110%);
+}
+.termsSection {
+  text-align: center;
+  font-size: 12px;
+  color: $grayishBlue;
+}
+.inputWrapper {
+  margin-bottom: 8px;
+}
+b {
+  font-weight: 500;
+}
+.redBold {
+  font-weight: 700;
+  color: $red;
+  cursor: pointer;
+}
+.errorImg {
+  position: absolute;
+  margin: 25px -60px;
+}
+.errorState {
+  border: 2px solid $red;
+}
+.errorMessage {
+  color: $red;
+  font-size: 11px;
+  text-align: right;
+}
+.hidden {
+  display: none;
+}
