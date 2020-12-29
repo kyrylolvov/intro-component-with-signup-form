@@ -14,18 +14,27 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 97vh;
+  height: 100vh;
 }
 
 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -70px;
 }
 
 .textSection {
   width: 532px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .headerText {
@@ -107,10 +116,6 @@ main {
   color: #b9b6d3;
 }
 
-.inputWrapper {
-  margin-bottom: 8px;
-}
-
 b {
   font-weight: 500;
 }
@@ -135,7 +140,6 @@ b {
   font-size: 11px;
   text-align: right;
 }
-
 .hidden {
   display: none;
 }
