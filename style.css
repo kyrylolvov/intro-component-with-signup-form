@@ -4,7 +4,6 @@ body {
   font-size: 16px;
   background: url(images/bg-intro-desktop.png), #ff7a7a;
   background-repeat: no-repeat;
-  background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,6 +14,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
+  margin: 0;
 }
 
 main {
@@ -140,7 +140,111 @@ b {
   font-size: 11px;
   text-align: right;
 }
+
 .hidden {
   display: none;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 20px;
+  }
+  .textSection {
+    width: 420px;
+    margin-right: 30px;
+  }
+  .headerText {
+    font-size: 45px;
+    margin: 0;
+    line-height: 45px;
+  }
+  .actionButton {
+    width: auto;
+  }
+  .errorImg {
+    margin: -50px 360px;
+  }
+}
+
+@media (max-width: 975px) {
+  .errorImg {
+    margin: -50px 36vw;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    background: url(images/bg-intro-mobile.png), #ff7a7a;
+    background-size: 50%;
+    padding: 50px;
+    height: auto;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .textSection {
+    text-align: center;
+    width: auto;
+    margin: 0 0 40px 0;
+  }
+  .headerText {
+    margin-bottom: 20px;
+  }
+  .errorImg {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 12px;
+    padding: 30px;
+  }
+  .headerText {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .paragraphText {
+    font-size: 14px;
+  }
+  .formInput {
+    width: 87%;
+    height: 46px;
+    font-size: 12px;
+  }
+  .claimButton {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    font-size: 12px;
+    padding: 20px;
+  }
+  main {
+    margin-top: 30px;
+  }
+  .headerText {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .paragraphText {
+    font-size: 12px;
+  }
+  .formInput {
+    width: 83%;
+    height: 46px;
+    font-size: 10px;
+  }
+  .claimButton {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
